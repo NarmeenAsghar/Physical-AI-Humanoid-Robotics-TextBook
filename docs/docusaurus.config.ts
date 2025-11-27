@@ -15,13 +15,13 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://naimalarain13.github.io',
+  url: 'https://NaimalArain13.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/add-hackathon-2k25/',
 
   // GitHub pages deployment config.
-  organizationName: 'naimalarain13', // Usually your GitHub org/user name.
+  organizationName: 'NaimalArain13', // Usually your GitHub org/user name.
   projectName: 'add-hackathon-2k25', // Usually your repo name.
 
   // Deployment branch configuration
@@ -46,7 +46,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Edit this page links
           editUrl:
-            'https://github.com/naimalarain13/add-hackathon-2k25/tree/master/docs/',
+            'https://github.com/NaimalArain13/add-hackathon-2k25/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +56,7 @@ const config: Config = {
           },
           // Edit this page links
           editUrl:
-            'https://github.com/naimalarain13/add-hackathon-2k25/tree/master/docs/',
+            'https://github.com/NaimalArain13/add-hackathon-2k25/tree/master/docs/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -90,7 +90,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/naimalarain13/add-hackathon-2k25',
+          href: 'https://github.com/NaimalArain13/add-hackathon-2k25',
           label: 'GitHub',
           position: 'right',
         },
@@ -134,7 +134,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/naimalarain13/add-hackathon-2k25',
+              href: 'https://github.com/NaimalArain13/add-hackathon-2k25',
             },
           ],
         },
