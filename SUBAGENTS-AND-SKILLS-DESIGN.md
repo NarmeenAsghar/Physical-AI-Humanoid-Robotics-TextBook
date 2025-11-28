@@ -327,7 +327,6 @@ docs/docs/
 ```
 
 **Implementation**: Integrated into Content Architect Subagent
-
 ---
 
 ### ✅ Skill 2: Lesson Template Generator 📄 [PHASE 1 - ACTIVE]
