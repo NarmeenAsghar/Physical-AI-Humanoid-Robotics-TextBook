@@ -21,3 +21,13 @@
   align-items: center;
   justify-content: center;
 }
+
+.sectionPadding {
+  padding: 60px 0;
+}
+
+.sectionTitle {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+

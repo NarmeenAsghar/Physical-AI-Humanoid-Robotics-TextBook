@@ -18,11 +18,11 @@ const config: Config = {
   url: 'https://NaimalArain13.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/add-hackathon-2k25/',
+  baseUrl: '/physical-ai-and-humaniod-robotics/',
 
   // GitHub pages deployment config.
   organizationName: 'NaimalArain13', // Usually your GitHub org/user name.
-  projectName: 'add-hackathon-2k25', // Usually your repo name.
+  projectName: 'physical-ai-and-humaniod-robotics', // Usually your repo name.
 
   // Deployment branch configuration
   deploymentBranch: 'gh-pages',
@@ -35,8 +35,9 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ur'],
   },
+
 
   presets: [
     [
@@ -46,7 +47,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Edit this page links
           editUrl:
-            'https://github.com/NaimalArain13/add-hackathon-2k25/tree/master/docs/',
+            'https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +57,7 @@ const config: Config = {
           },
           // Edit this page links
           editUrl:
-            'https://github.com/NaimalArain13/add-hackathon-2k25/tree/master/docs/',
+            'https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics/tree/master/docs/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -90,8 +91,12 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/NaimalArain13/add-hackathon-2k25',
+          href: 'https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
       ],
@@ -134,7 +139,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/NaimalArain13/add-hackathon-2k25',
+              href: 'https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics',
             },
           ],
         },

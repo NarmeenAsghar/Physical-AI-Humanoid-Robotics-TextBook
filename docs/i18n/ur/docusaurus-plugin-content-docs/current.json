@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Chapter 1: Foundations": {
+    "message": "Chapter 1: Foundations",
+    "description": "The label for category 'Chapter 1: Foundations' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Chapter 2: ROS 2 Fundamentals": {
+    "message": "Chapter 2: ROS 2 Fundamentals",
+    "description": "The label for category 'Chapter 2: ROS 2 Fundamentals' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Chapter 3: Simulation": {
+    "message": "Chapter 3: Simulation",
+    "description": "The label for category 'Chapter 3: Simulation' in sidebar 'tutorialSidebar'"
+  }
+}
