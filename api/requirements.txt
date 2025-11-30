@@ -1,0 +1,20 @@
+# FastAPI and server
+fastapi[standard]>=0.122.0
+uvicorn>=0.33.0
+sse-starlette>=2.1.3
+
+# AI/ML libraries
+agents>=1.4.0
+openai>=1.0.0
+openai-agents>=0.6.1
+fastembed>=0.4.2
+tiktoken>=0.7.0
+
+# Vector database
+qdrant-client>=1.12.1
+
+# Utilities
+pydantic>=2.10.6
+pydantic-settings>=2.8.1
+python-dotenv>=1.0.1
+httpx>=0.28.1

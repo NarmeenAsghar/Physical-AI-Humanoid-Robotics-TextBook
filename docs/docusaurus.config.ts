@@ -38,6 +38,11 @@ const config: Config = {
     locales: ['en', 'ur'],
   },
 
+  // Custom fields for ChatWidget API configuration
+  customFields: {
+    chatbotApiUrl: process.env.CHATBOT_API_URL || 'http://localhost:3001/api',
+  },
+
 
   presets: [
     [
