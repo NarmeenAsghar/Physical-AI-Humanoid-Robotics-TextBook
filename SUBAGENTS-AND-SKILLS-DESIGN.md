@@ -59,7 +59,7 @@
 ### Optional Features (Post-Hackathon)
 - ⏳ BetterAuth-based Authentication (Signup/Login) (+50 bonus points)
 - ⏳ Personalization based on user background (+50 bonus points)
-- ⏳ Urdu translation (+50 bonus points)
+- ✅ Urdu translation (+50 bonus points) - COMPLETED
 
 ---
 

@@ -1,0 +1,53 @@
+/**
+ * TextSelectionHandler Styles
+ */
+
+.selectionButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  z-index: 10000 !important; /* Very high z-index to ensure visibility */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  animation: fadeIn 0.2s ease-out;
+  pointer-events: auto !important; /* Ensure clickable */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.selectionButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+}
+
+.selectionButton:active {
+  transform: translateY(0);
+}
+
+/* Dark theme support */
+[data-theme='dark'] .selectionButton {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.6);
+}
+
+[data-theme='dark'] .selectionButton:hover {
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.7);
+}
+
