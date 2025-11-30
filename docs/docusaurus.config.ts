@@ -40,7 +40,7 @@ const config: Config = {
 
   // Custom fields for ChatWidget API configuration
   customFields: {
-    chatbotApiUrl: process.env.CHATBOT_API_URL || 'http://localhost:3001/api',
+    chatbotApiUrl: process.env.CHATBOT_API_URL || 'https://naimalcreativityai-physical-ai-chatbot-api.hf.space/api',
   },
 
 
