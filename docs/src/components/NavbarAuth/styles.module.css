@@ -1,0 +1,274 @@
+/* Auth Container for logged out users */
+.authContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+.signinLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ifm-navbar-link-color);
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.signinLink:hover {
+  background-color: rgba(102, 126, 234, 0.1);
+  border-color: #667eea;
+  color: #667eea;
+  text-decoration: none;
+}
+
+.signinIcon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.signinText {
+  display: inline;
+}
+
+.signupButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: none;
+  white-space: nowrap;
+}
+
+.signupButton:hover {
+  background: linear-gradient(135deg, #8099f5 0%, #9168c9 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+  text-decoration: none;
+  color: white !important;
+}
+
+/* User Dropdown Container */
+.userDropdownContainer {
+  position: relative;
+  margin-left: 0.5rem;
+}
+
+.userButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--ifm-navbar-link-color);
+  color: var(--ifm-navbar-link-color);
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.userButton:hover {
+  background-color: rgba(102, 126, 234, 0.1);
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.userIcon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.userName {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.dropdownArrow {
+  transition: transform 0.2s ease;
+}
+
+.userButton:hover .dropdownArrow {
+  transform: translateY(1px);
+}
+
+/* Dropdown Menu */
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 200px;
+  background: var(--ifm-navbar-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  overflow: hidden;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: none;
+  color: var(--ifm-navbar-link-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: left;
+}
+
+.dropdownItem:hover {
+  background-color: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+}
+
+.dropdownIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  width: 20px;
+}
+
+.dropdownDivider {
+  height: 1px;
+  background-color: var(--ifm-color-emphasis-200);
+  margin: 0.25rem 0;
+}
+
+.signoutItem {
+  color: var(--ifm-color-danger);
+}
+
+.signoutItem:hover {
+  background-color: rgba(255, 76, 76, 0.1);
+  color: var(--ifm-color-danger);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 996px) {
+  /* Auth Container - Only show Sign In icon on mobile navbar */
+  .authContainer {
+    margin-left: 0;
+    gap: 0;
+    width: auto;
+  }
+
+  .signinLink {
+    padding: 0.5rem;
+    border: none;
+  }
+
+  /* Hide Sign In text on mobile, show only icon */
+  .signinText {
+    display: none;
+  }
+
+  .signinIcon {
+    font-size: 1.3rem;
+  }
+
+  /* Hide Sign Up button on mobile navbar - will be in sidebar */
+  .signupButton {
+    display: none;
+  }
+
+  .signinLink:hover {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  /* User dropdown for mobile */
+  .userDropdownContainer {
+    margin-left: 0;
+    width: auto;
+  }
+
+  .userButton {
+    padding: 0.4rem 0.8rem;
+    justify-content: center;
+  }
+
+  .userIcon {
+    font-size: 1.1rem;
+  }
+
+  /* Hide user name on very small screens, show only icon */
+  .userName {
+    display: inline;
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .dropdownMenu {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    border-radius: 12px 12px 0 0;
+    animation: slideUp 0.3s ease;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .dropdownItem {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Extra small screens - show only icon */
+@media (max-width: 480px) {
+  .userName {
+    display: none;
+  }
+
+  .userButton {
+    padding: 0.5rem;
+  }
+
+  .dropdownArrow {
+    display: none;
+  }
+}

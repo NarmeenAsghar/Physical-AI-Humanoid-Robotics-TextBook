@@ -1,11 +1,12 @@
 /**
  * Root component wrapper for Docusaurus
- * Swizzled to inject ChatWidget and TextSelectionHandler globally
+ * Swizzled to inject ChatWidget, TextSelectionHandler, and AuthProvider globally
  */
 import React, { useState, useCallback, useEffect } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import ChatWidget from '@site/src/components/ChatWidget';
 import TextSelectionHandler from '@site/src/components/TextSelectionHandler';
+import { AuthProvider } from '@site/src/contexts/AuthContext';
 
 export default function Root({ children }: { children: React.ReactNode }): React.ReactElement {
   const { siteConfig } = useDocusaurusContext();
@@ -24,7 +25,7 @@ export default function Root({ children }: { children: React.ReactNode }): React
   }, []);
 
   return (
-    <>
+    <AuthProvider>
       {children}
       <TextSelectionHandler onTextSelected={handleTextSelection} />
       <ChatWidget
@@ -32,6 +33,6 @@ export default function Root({ children }: { children: React.ReactNode }): React
         selectedText={selectedText}
         selectionTimestamp={textTimestamp}
       />
-    </>
+    </AuthProvider>
   );
 }

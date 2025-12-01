@@ -2,8 +2,9 @@
 Configuration settings for the Physical AI Chatbot API.
 Loads configuration from environment variables.
 """
+
 from pydantic_settings import BaseSettings
-from typing import List
+from typing import List, Optional
 
 
 class Settings(BaseSettings):
@@ -21,6 +22,10 @@ class Settings(BaseSettings):
 
     # FastEmbed Configuration
     embedding_model: str = "BAAI/bge-small-en-v1.5"  # 384-dimensional embeddings
+
+    # Authentication Configuration
+    database_url: str
+    jwt_secret_key: str
 
     # CORS Configuration
     cors_origins: str = "http://localhost:3000"
