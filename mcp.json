@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "better-auth": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-fetch",
+        "https://mcp.chonkie.ai/better-auth/better-auth-builder/mcp"
+      ]
+    }
+  }
+}
+

@@ -28,3 +28,53 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Hide locale dropdown when user is logged in */
+[data-logged-in='true'] .navbar-locale-dropdown {
+  display: none;
+}
+
+/* Mobile Navbar Optimizations */
+@media (max-width: 996px) {
+  /* Hide color mode toggle on mobile navbar - will be in sidebar */
+  .navbar__items--right .colorModeToggle {
+    display: none !important;
+  }
+  
+  /* Hide GitHub link on mobile navbar */
+  .navbar__items--right > .navbar__item[href*="github"] {
+    display: none !important;
+  }
+
+  /* Hide locale dropdown on mobile navbar - will be in sidebar */
+  .navbar__items--right .navbar-locale-dropdown {
+    display: none !important;
+  }
+  
+  /* Keep navbar items aligned properly */
+  .navbar__items--right {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  /* Navbar title should be smaller on mobile */
+  .navbar__title {
+    font-size: 1rem;
+  }
+
+  /* Mobile sidebar styling */
+  .menu__list-item {
+    padding: 0;
+  }
+
+  .menu__link {
+    padding: 0.75rem 1rem;
+  }
+
+  /* Ensure mobile sidebar has proper scroll */
+  .navbar-sidebar__items {
+    height: 100%;
+    overflow-y: auto;
+  }
+}

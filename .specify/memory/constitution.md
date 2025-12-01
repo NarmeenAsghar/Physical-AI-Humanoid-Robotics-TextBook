@@ -133,6 +133,10 @@ Every feature MUST pass these gates before merging:
 - GitHub Pages deployment
 
 ### In Scope (Bonus Points - Optional)
+5. Participants can receive up to 50 extra bonus points if they also implement Signup and Signin using https://www.better-auth.com/ At signup you will ask questions from the user about their software and hardware background. Knowing the background of the user we will be able to personalize the content.
+
+6.  Participants can receive up to 50 extra bonus points if the logged user can personalise the content in the chapters by pressing a button at the start of each chapter. 
+
 
 - Better-auth.com authentication with user background collection (+50 points)
 - Per-chapter personalization based on user background (+50 points)

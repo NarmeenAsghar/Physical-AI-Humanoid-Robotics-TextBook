@@ -95,14 +95,11 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // Language selector shown for logged-out users, hidden for logged-in via CSS
         {
           type: 'localeDropdown',
           position: 'right',
+          className: 'navbar-locale-dropdown',
         },
       ],
     },
