@@ -300,16 +300,5 @@ MIT License - see LICENSE file for details
 - Powered by Gemini and Qdrant
 - Inspired by modern educational technology
 
-## 📧 Contact
 
-- **Author**: Naimal Arain
-- **GitHub**: [@NaimalArain13](https://github.com/NaimalArain13)
-- **Repository**: [physical-ai-and-humaniod-robotics](https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics)
-
----
-
-**Status**: ✅ Phase 1 Complete - RAG Chatbot Integrated
-
-Last Updated: November 29, 2025
-#   P h y s i c a l - A I - H u m a n o i d - R o b o t i c s - T e x t B o o k  
  
