@@ -5,6 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
+  // --- PROJECT METADATA CHANGES ---
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'Comprehensive textbook for Physical AI and Humanoid Robotics course',
   favicon: 'img/favicon.ico',
@@ -14,15 +15,20 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  // --- GITHUB DEPLOYMENT / HOSTING CHANGES ---
   // Set the production url of your site here
-  url: 'https://NaimalArain13.github.io',
+  // *** CHANGE 1: Update the URL to your GitHub Pages URL ***
+  url: 'https://YourNewUsername.github.io', 
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/physical-ai-and-humaniod-robotics/',
+  // *** CHANGE 2: Update the base URL to your repository name (with leading/trailing slashes) ***
+  baseUrl: '/docusaurus-site/', 
 
   // GitHub pages deployment config.
-  organizationName: 'NaimalArain13', // Usually your GitHub org/user name.
-  projectName: 'physical-ai-and-humaniod-robotics', // Usually your repo name.
+  // *** CHANGE 3: Update organizationName to your GitHub Username ***
+  organizationName: 'YourNewUsername', 
+  // *** CHANGE 4: Update projectName to your Repository Name ***
+  projectName: 'my-cloned-docusaurus-site', 
 
   // Deployment branch configuration
   deploymentBranch: 'gh-pages',
@@ -38,7 +44,7 @@ const config: Config = {
     locales: ['en', 'ur'],
   },
 
-  // Custom fields for ChatWidget API configuration
+  // Custom fields for ChatWidget API configuration (KEEPING ORIGINAL)
   customFields: {
     chatbotApiUrl: process.env.CHATBOT_API_URL || 'https://naimalcreativityai-physical-ai-chatbot-api.hf.space/api',
   },
@@ -51,8 +57,9 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           // Edit this page links
+          // *** CHANGE 5: Update the editUrl to your new repo path ***
           editUrl:
-            'https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics/tree/master/docs/',
+            'https://github.com/YourNewUsername/docusaurus-site/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -61,8 +68,9 @@ const config: Config = {
             xslt: true,
           },
           // Edit this page links
+          // *** CHANGE 6: Update the editUrl for the blog to your new repo path ***
           editUrl:
-            'https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics/tree/master/docs/',
+            'https://github.com/YourNewUsername/docusaurus-site/tree/master/docs/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -83,10 +91,10 @@ const config: Config = {
     },
     navbar: {
       title: 'Physical AI & Robotics',
-      logo: {
-        alt: 'Physical AI & Robotics Logo',
-        src: 'img/logo.svg',
-      },
+      // logo: {
+      //   alt: 'Physical AI & Robotics Logo',
+      //   src: 'img/docusaurus.png', 
+      // },
       items: [
         {
           type: 'docSidebar',
@@ -141,7 +149,8 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/NaimalArain13/physical-ai-and-humaniod-robotics',
+              // *** CHANGE 7: Update the GitHub link in the footer ***
+              href: 'https://github.com/YourNewUsername/docusaurus-site',
             },
           ],
         },
