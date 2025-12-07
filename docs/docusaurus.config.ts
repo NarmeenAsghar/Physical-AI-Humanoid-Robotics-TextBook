@@ -18,17 +18,17 @@ const config: Config = {
   // --- GITHUB DEPLOYMENT / HOSTING CHANGES ---
   // Set the production url of your site here
   // *** CHANGE 1: Update the URL to your GitHub Pages URL ***
-  url: 'https://YourNewUsername.github.io', 
+  url: 'https://narmeenasghar.github.io/', 
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // *** CHANGE 2: Update the base URL to your repository name (with leading/trailing slashes) ***
-  baseUrl: '/docusaurus-site/', 
+  baseUrl: '/Physical-AI-Humanoid-Robotics-TextBook/', 
 
   // GitHub pages deployment config.
   // *** CHANGE 3: Update organizationName to your GitHub Username ***
-  organizationName: 'YourNewUsername', 
+  organizationName: 'NarmeenAsghar', 
   // *** CHANGE 4: Update projectName to your Repository Name ***
-  projectName: 'my-cloned-docusaurus-site', 
+  projectName: 'Physical-AI-Humanoid-Robotics-TextBook', 
 
   // Deployment branch configuration
   deploymentBranch: 'gh-pages',
@@ -59,7 +59,7 @@ const config: Config = {
           // Edit this page links
           // *** CHANGE 5: Update the editUrl to your new repo path ***
           editUrl:
-            'https://github.com/YourNewUsername/docusaurus-site/tree/master/docs/',
+            'https://github.com/NarmeenAsghar/Physical-AI-Humanoid-Robotics-TextBook/tree/master/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -70,7 +70,7 @@ const config: Config = {
           // Edit this page links
           // *** CHANGE 6: Update the editUrl for the blog to your new repo path ***
           editUrl:
-            'https://github.com/YourNewUsername/docusaurus-site/tree/master/docs/',
+            'https://github.com/NarmeenAsghar/Physical-AI-Humanoid-Robotics-TextBook/tree/master/docs/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -150,7 +150,7 @@ const config: Config = {
             {
               label: 'GitHub',
               // *** CHANGE 7: Update the GitHub link in the footer ***
-              href: 'https://github.com/YourNewUsername/docusaurus-site',
+              href: 'https://github.com/NarmeenAsghar/Physical-AI-Humanoid-Robotics-TextBook',
             },
           ],
         },
